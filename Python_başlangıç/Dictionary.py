@@ -5,16 +5,16 @@
 
 
 #         SÖZLÜK YAPISIIII
-"""
+
 sehirler = ["kocaeli", "istanbul"]
 plakalar = [41, 34]
 
 print(plakalar[sehirler.index("kocaeli")])
 print(plakalar[sehirler.index("istanbul")])
-"""#mantığı kavramak için yazdık ////
+#mantığı kavramak için yazdık ////
 
 #********KEY-VALUE MANTIĞIIIII********
-"""
+
 #print(plakalar["kocaeli"]) => bu şekilde yazdığımızda bizi 41 e götürecek
 
 #değişkenAdı = {"key": "value"} //bu şeklide
@@ -31,10 +31,10 @@ plakalar["ankara"] = 6 #bu kadar
 plakalar["kocaeli"] = "new value"
 
 print(plakalar)
-"""
+
 
 #OYEEEEE
-"""
+
 users = {
     "SadıkTuran" : {
         "age" : 36,
@@ -55,9 +55,9 @@ users = {
 #ilk parametra birinci key ikinci parametra ikinci key 
 #istediğimiz seçmek için diziler mandığı işliyor
 print(users["CınarTuran"]["roles"][0])
-"""
+
 #******UYGULSAAAAA********
-"""
+
 ogranciler = {}
 
 numara = input("öğrenci numarası :")
@@ -110,7 +110,7 @@ ogrenci = ogranciler[girilen_numara]
 
 print(f"{girilen_numara} lı öğrencinin ismi {ogrenci["ad"]} {ogrenci["soyad"]} ve telefon numarası {ogrenci["tel"]} dirr.")
 print(ogrenci)
-"""
+
 
 # SÖZLÜKKKKKKKKKK falan filan
 

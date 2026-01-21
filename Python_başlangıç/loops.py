@@ -69,13 +69,13 @@ for sayi in sayilar:
 sehirler = ["kocaeli", "istanbul", "ankara", "izmir", "rize"]
 
 # 4. soru
-"""
+
 for sehir in sehirler:
     if(len(sehir) <= 5):
         print(sehir)
     else:
          print("a")
-"""
+
 urunlar =[
     {"name":"samsung s6", "price" : "3000"},
     {"name":"samsung s7", "price" : "4000"},
@@ -85,27 +85,27 @@ urunlar =[
 ]
 
 # 5. soru
-"""
+
 toplam = 0
 for urun in urunlar:
     print(urun["price"])
     toplam += int(urun["price"])
 
 print(toplam)
-"""
+
 # 6. soru
-"""
+
 for urun in urunlar:
     fiyat = int(urun["price"])
     if(fiyat <= 5000):
         print(urun["name"])
-"""
+
 
 
 # ***///***WHİLEEEE***///***
 
 # 1-100 e kada
-"""
+
 x = 1
 
 while(x <= 100):
@@ -126,41 +126,41 @@ while not name.strip():
     name = input("isminizi Gİrin :")
 
 print(f"Merhaba {name}")
-"""
+
 
 # ***---UYGULAMALAR---***
 
 sayilar = [1,3,5,7,9,12,19,21]
 
 #1. soru
-"""
+
 x = 0
 while (x < len(sayilar)):
     print(sayilar[x])
     x += 1
-"""
+
 
 #2. soru
-"""
+
 start_value = int(input("Başlangıç Değerini Giriniz :"))
 finish_value = int(input("Bitiş Değerini Giriniz :"))
 
 while (start_value <= finish_value):
     print(start_value)
     start_value += 1
-"""
+
 
 #3. soru
-"""
+
 x = 100
 
 while ( x > 0):
     print(x)
     x -= 1
-"""
+
 
 #4. soru
-"""
+
 numbers = []
 x = 0
 while(x < 5):
@@ -173,23 +173,23 @@ numbers.sort()
 
 print(numbers)
 
-"""
+
 # bubble sort with while
-"""
+
 y = 0
-while ( y < len(input_numbers)):
+while ( y < len(numbers)):
     z = 0
-    while (z < len(input_numbers) - y - 1):
-        if(input_numbers[z] > input_numbers[z + 1]):
-           input_numbers[z], input_numbers[z + 1] = input_numbers[z + 1], input_numbers[z] 
+    while (z < len(numbers) - y - 1):
+        if(numbers[z] > numbers[z + 1]):
+           numbers[z], numbers[z + 1] = numbers[z + 1], numbers[z] 
         z += 1
     y += 1
-print(input_numbers)
-"""
+print(numbers)
+
 
 
 #5. soru
-"""
+
 urunler = [
     {"name" : "price"},
     
@@ -208,4 +208,3 @@ while (i < urun_sayisi):
     i += 1     
 
 print(urunler)
-"""

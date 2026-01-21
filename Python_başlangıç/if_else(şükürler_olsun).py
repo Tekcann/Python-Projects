@@ -2,7 +2,7 @@ username = "Ahmet"
 password = "12345678"
 
 # Koşullllllllsaaaaaaaaaarrrrrrrrr Sonundaa
-"""
+
 if (username == "Ahmet"):
     if (password == "12345678"):
         print("Merhaba Dünya")
@@ -10,10 +10,10 @@ if (username == "Ahmet"):
         print("Şifren yanlış")
 else:
     print("İsmin yanlış")
-"""
+
 
 #**** else-if ****
-"""
+
 x = 10
 y = 20
 if (x > y):
@@ -22,8 +22,8 @@ elif (x == y):
     print("x y ye eşit")
 else :
     print("y x den büyük")
-"""
-"""
+
+
 num = int(input("sayı :"))
 
 if (num > 0):
@@ -32,12 +32,12 @@ elif (num < 0):
     print("Sayı negatif")
 else:
     print("Sayı sıfır")
-"""
+
 
 # *****UYGULAMALAR*****
 
 #1. soru
-"""
+
 name = input("İsminiz :")
 age = int(input("Yaşınız :"))
 education = input("Eğitim düzeyiniz :")
@@ -48,10 +48,10 @@ if((age >= 18) and ((education == "üniversite") or (education == "lise")) ):
     print("EHliyet AlaBilirsiN")
 else:
     print("ehliyet alamazsın")
-"""
+
 
 #2. soru
-"""
+
 not1 = int(input("Birinci not :"))
 not2 = int(input("ikinci not :"))
 sozlu = int(input("Sözlü not :"))
@@ -75,9 +75,9 @@ elif(ort >= 70) and (ort <= 84):
 
 elif(ort >= 85) and (ort <= 100):
     print(f"ortalaman :{ort} değerin 5 ")
-"""
+
 #3. soru
-"""
+
 from datetime import datetime
 
 arac_tarihi = input("aracinizi trafiğe çıkış tarihi nedir\n(örnek: 2000.12.01) :")
@@ -98,20 +98,20 @@ elif(servis_zamani.days > 365*2) and (servis_zamani.days <= 365*3):
 
 else:
     print("Maşallah araban çok eski")
-"""
+
 
 #4. soru 
-"""
+
 sayi = int(input("Sayı Giriniz :"))
 
 if( 0 < sayi < 100):
     print(f"Sayı 0 ile 100 arasında {sayi}")
 else:
     print(f"Sayı 0 ile 100 arasında değil {sayi}")
-"""
+
 
 # 5. soru
-"""
+
 sayi = int(input("Bir Sayı Giriniz :"))
 
 if(sayi >= 0):
@@ -121,10 +121,10 @@ if(sayi >= 0):
         print("Sayı Pazitif Tek Bir Sayı")
 else:
     print("Sayı negatif bir sayı")
-"""
+
 
 # 6. soru
-"""
+
 email = "deneme@gmail.com"
 password = "abc123"
 
@@ -138,6 +138,6 @@ if(kullanici_email == email):
         print("Şifre Yanlış")
 else:
     print("Email Yanlış")
-"""
+
 
 

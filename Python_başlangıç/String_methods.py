@@ -1,7 +1,7 @@
 message = "Hello There. My name is Şahin Tekcan"
 
 #*********String Metotlar*********
-"""
+
 # BÜTÜN KARAKTERLERİ BÜYÜK HARFLE YAZAR
 message = message.upper()
 
@@ -44,7 +44,7 @@ message =message.replace("Tekcan", "Deneme").replace(" ", "*")
 message =message.center(50,"*")
 
 print(message)
-"""
+
 
 
 #*****UYGULAMAAAAAAAA*****

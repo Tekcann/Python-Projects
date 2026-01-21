@@ -33,7 +33,7 @@ print(f"hasar :{hasar}, rndSayı :{rnd_sayi}, puan :{puan}")
 
 
 # Girilen Sayının Asal Olup Olmadığını bulalım
-"""
+
 while (True):
 
     girilen_sayi = int(input("Bir Sayı Giriniz :"))
@@ -45,4 +45,3 @@ while (True):
         else:
             print("Sayı ASAL dirrr")
             break
-"""

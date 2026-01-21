@@ -1,30 +1,29 @@
 #*****DİZİLEEERRRRRRRR*****
-"""
+
 my_list = [1,2,3]
 #birbirinden farklı veri tipleri tek dizide olabilir
 my_list = ["bir",2 ,True ,5.6]
 print(my_list)
-"""
 
-"""
+
 list1 = ["one", "two", "there"]
 list2 = ["four", "five", "six"]
 numbers = list1 + list2
 print(numbers)
 print(len(numbers))#dizinin içiDEKİ elemanların sayısına ulaşılır
 print(numbers[3])
-"""
-"""
+
+
 userA = ["Ahmet", 18]
 userB = ["Şahin", 21]
 users = [userA , userB]
 print(userA)
 print(userB)
 print(users[0][1])# iki boyutu bizelerin kullanımı
-"""
+
 
 #*****UYGULAMAAAAAA*****
-"""
+
 # birinic soru
 arabalar =["BMW", "Mersedes", "Opel", "Mazda"]
 
@@ -74,11 +73,11 @@ print(studentC[3][0])
 #13
 resultA = (studentA[3][0] + studentA[3][1] + studentA[3][2])/3
 print(f"{studentA[0]} {studentA[1]}, {2026 -studentA[2]} yaşındandır ve ortalaması {resultA}")
-"""
+
 
 
 #*****DİZİ METOTLARIIII*****
-"""
+
 numbers = [1, 10, 5, 16, 4, 9, 10]
 letters = ["a", "g", "s", "b", "y", "a", "s"]
 
@@ -125,10 +124,10 @@ print(numbers.count(10))
 
 print(numbers)
 print(val)
-"""
+
 
 #*****UYGULAMAAAAAAAAAA*****
-"""
+
 names = ["Ali", "Yağmur", "Hakan", "Deniz"]
 years = [1998, 2000, 1998, 1987]
 #1. soru
@@ -185,4 +184,4 @@ markalar.append(input("ikinci marka :"))
 markalar.append(input("üçüncü marka :"))
 
 print(markalar)
-"""
+

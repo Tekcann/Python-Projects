@@ -1,12 +1,12 @@
 # ---range() metodu---
 # Bu metot range(başlat, durdur, artış miktarı)
 # ya da sadece işimize yarayan kısmı yazabiliriz
-"""
+
 for item in range(50,100,10):
     print(item)
 
 print(list(range(50,100,10)))
-"""
+
 
 # ---enumerate metodu---
 # her kullanımda elemanın index ini ve değerini alır
@@ -17,20 +17,20 @@ index = 0
 greeting = "Hello World"
 
 # enumerate' siz kullanım 
-"""
+
 for latter in greeting:
     print(f"index :{index} letter :{latter}")
     print(f"index :{index} letter :{greeting[index]}")
     index += 1
-"""
+
 # enumerate ile kullanım
-"""
+
 for item in enumerate(greeting):
     print(item)
 
 for index, latter in enumerate(greeting):
     print(f"index :{index}, letter :{latter}")
-"""
+
 
 # ---zip metodu---
 #iki farklı listeyi birleştirmek için kullanılır

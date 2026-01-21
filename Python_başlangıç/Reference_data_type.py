@@ -2,7 +2,7 @@
 #string, int, floa, bool, falan filan
 
 #burada değişkenin değeri ile ilgilenilir
-"""
+
 x = 5
 y = 25
 
@@ -11,7 +11,7 @@ x = y
 # sadece o değişkeni etkiler
 y = 10
 print(x,y)
-"""
+
 #Reference veri tipi - Reference Data Type
 
 #burada deşikenin saklandığı adres ile işlem yapılıe
