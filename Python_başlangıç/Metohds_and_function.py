@@ -2,6 +2,7 @@
 #  Metot bir class ın içindedir
 # eğe nokta koyarak çalışıyorsa o metotodur
 # classların içinde olarak nitelendirilir
+
 list = [1,2,3]
 
 list.append(4) # append bir metot
@@ -146,6 +147,138 @@ def myFunch(a, b, *arng, **kwargs):
 myFunch(10, 20, 30, 40, 50, key1 = "value 1", key2 = "Value 2")
 
 
-#*******************UYGULAMALAR******************
+# *******************UYGULAMALAR******************
 
-#1. soru
+# 1. soru
+def yazdir(kelime, tekrar):
+    i = 0   
+    while i < tekrar:
+        i += 1
+        print(kelime)
+    #ya de
+    print(kelime * tekrar)
+
+yazdir("adana", 10)
+
+# 2. soru
+def listeleme(*dizi):
+    liste = []
+    
+    for list in dizi:
+       liste.append(list)
+    return liste
+
+result = listeleme(2,3,45,6,7,8,9,35)
+print(result)
+
+# 3. soru
+
+def aralarindakiAsallar(s1,s2):    
+    for s in range(s1,s2 + 1):
+        if (s > 1):
+            for i in range(2, s):
+                if (s % i == 0):
+                    break
+            else:
+                print(s)
+# else döngüler ilede kullanıla bilir ve 
+# döngü içerisinde break komutu kullanılmazsa else içerisinde yazılan çalışır
+# gibi birşey anladım
+
+# not: Döngüdeki else, "Eğer döngü hiçbir break komutuna çarpmadan 
+# doğal bir şekilde bittiyse çalış" anlamına gelir.
+
+sayi1 = int(input("Birinci Sayıyı Giriniz :"))
+sayi2 = int(input("İkinci Sayıyı Giriniz :"))
+aralarindakiAsallar(sayi1, sayi2)
+
+# 4. soru
+
+def tamBolenleri(sayi):
+    tamBolenler = []
+
+    for i in range(2, sayi):
+        if (sayi % i == 0):
+            tamBolenler.append(i)
+    return tamBolenler
+
+print(tamBolenleri(20))
+
+
+# ******************LAMBDA EXPRESSİON*******************
+# ******************************************************
+
+# WİTHOUT LAMBDA 
+def square(num): return num ** 2
+result = square(2)
+
+print(result)
+
+numbers = [1,3,5,9,10,12,13,14,156,67,72,8]
+
+# numbers dizisinin her bir elemanının karesini almak stiyoruz. ama neden
+
+# dizi içerisinde ki her bir elemana ulaşıp 
+# bir fonksiyon üzerinden geçirebiliriz
+
+# dizideki elemanlar squqre fonkisoyuna gidiyor 
+# ve return ile gelen değerler list fonksiyonu ile 
+# listeye çevriliyor
+result = list(map(square, numbers))
+print(result)
+
+# dizideki bütün elemanlar geziliyor square fonkiyonu çalışıyor
+# ve sırayla ekrana yazılıyor
+
+for item in  map(square, numbers):
+    print(item)
+
+
+###************ WİTH LAMBDA ******************
+# ********************************************
+
+# NOT:!! map ifadesi dizinin her bir elemanını bir fonksiyona gönderme işlemi yapan bir fonksiyon !!
+
+# Bir fonksiyon tanımlayıp çağırmak yerine 
+# anlık olarak lambda komutu ile fonksiyon oluşturabiliyoruz
+
+# oluşan işlemler bir dizi haline getiriliyoe ve ekrana yazdırılıyor
+
+result = list(map(lambda num: num ** 2, numbers))
+print(result)
+
+# dizinin her bir elemanına sırayla oluşan fonksiyon yazılıyor 
+# ve sırayla ekrana yazdırılıyor
+for item in  map(lambda num: num ** 2, numbers):
+    print(item)
+
+# ****************
+print("*" * 50)
+# lambda ifadesini bir değişkene atayabiliriyoruz
+square3 = lambda num: num ** 2
+
+result = square3(3)
+print(result)
+
+# return komutuna koşul ekledik bu sayede
+# %2 si 0 a eşit olmayanlar geri gönderilemedi sanırım
+
+# def chack_even(num): return(num % 2 == 0)
+chack_even = lambda num:num % 2 == 0
+
+#filter komutu True False üretir bir koşula bağlıdır
+# eğer koşul doğruysa dizinin içindeki elemanı alır
+# eğe koşulu karşılamıyorsa elemanı eler ve kullandırtmaz
+#bir süzgeç görevi görür belli koşula oygun olanların geçmesine izin verir (10 dan büyükmü, 5 ten büyük bütün sayılar al gibi koşullar için yugundur mod falan işte)
+# map fonksiyonu bir her bir elemana etki eder ve formunu değiştirir (karesini alır yada ikiye böler string yapar vb)
+result = list(filter(chack_even, numbers))
+print(result)
+
+
+
+
+
+
+
+
+
