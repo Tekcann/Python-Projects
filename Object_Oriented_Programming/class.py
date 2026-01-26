@@ -6,9 +6,6 @@ class Person:
     # her zaman kullanılmayacak bir özellik için
     address = "no information"
 
-
-
-
     # ***constructor (yapıcı Metod)***
 
     # mutlaka gerekli olanlar bu şekilde
@@ -24,13 +21,14 @@ class Person:
 
     # **methods**
 
-    # *instance methods*
+    # *instance methods* [ objelere hismet edecek metotlar]
     def intro(self):
-        print("Hello World " + self.name)
+        print("Hello There ")
 
     # *instance methods*
     def calculateAge(self):
         return 2026 - self.year
+    
 
 # ***object (instance)***
 
