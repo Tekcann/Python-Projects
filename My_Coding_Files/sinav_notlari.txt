@@ -1,0 +1,4 @@
+Ahmet Tekcan:100,90,95
+Süleyman Sabbah:60,70,20
+deneme denemeoğlu:20,53,78
+fitnat sami:75,96,60
