@@ -104,4 +104,4 @@ result = os.path.split( r"C:\Users\Neyca\Desktop\yazılım\Python\Modules\Os_mod
 result = os.path.splitext("Os_module.py")
 # çıktı: ('Os_module', '.py') uzantısı dosya isimiden ayırır
 
-print(result[0])
+print(result)
